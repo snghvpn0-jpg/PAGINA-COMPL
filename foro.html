@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foro | Violencia verbal</title>
+<link rel="stylesheet" href="estilos-dinamicos.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-text"><strong>Eco Roto</strong><small>Foro de reflexión</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menú</button>
+    <nav id="primary-nav" class="site-nav">
+      <a href="index.html">Inicio</a>
+      <a href="informacion.html">Información</a>
+      <a href="origen.html">Origen</a>
+      <a href="historias.html">Historias</a>
+      <a href="prevencion.html">Prevención</a>
+      <a href="videos.html">Videos</a>
+      <a class="active" href="foro.html">Foro</a>
+      <a href="escuela.html">Escuela</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero" style="--hero-image:url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1800&q=80');">
+  <div class="container">
+    <span class="eyebrow">Foro</span>
+    <h1>Un espacio para pensar antes de hablar</h1>
+    <p>Comparte ideas sin nombres reales ni ataques. La meta es reflexionar y proponer soluciones respetuosas.</p>
+  </div>
+</section>
+
+<main class="main">
+  <section class="section">
+    <div class="grid two">
+      <article class="section-card">
+        <h3>Antes de escribir</h3>
+        <ul class="check-list">
+          <li>Escribe con respeto.</li>
+          <li>No menciones nombres reales.</li>
+          <li>Habla de soluciones, no de humillar.</li>
+          <li>Piensa si tu comentario aporta algo útil.</li>
+        </ul>
+      </article>
+      <article class="survey" data-survey="encuesta-foro">
+        <h3>Encuesta breve</h3>
+        <p>¿Qué ayuda más dentro del grupo?</p>
+        <div class="survey-options">
+          <button type="button" class="survey-option" data-survey-option data-survey-message="Elegiste el diálogo" data-survey-extra="Hablar con respeto reduce tensión.">Diálogo</button>
+          <button type="button" class="survey-option" data-survey-option data-survey-message="Elegiste la empatía" data-survey-extra="Ponerse en el lugar del otro cambia la actitud.">Empatía</button>
+          <button type="button" class="survey-option" data-survey-option data-survey-message="Elegiste la intervención" data-survey-extra="Corregir a tiempo también protege.">Intervención</button>
+        </div>
+        <div class="survey-feedback" data-survey-feedback>Selecciona una opción.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <span class="pill">Publicar</span>
+        <h2>Escribe tu reflexión</h2>
+      </div>
+    </div>
+    <div class="form-card">
+      <form class="grid" data-forum-form>
+        <div class="grid two">
+          <label>Nombre
+            <input name="nombre" type="text" placeholder="Tu nombre">
+          </label>
+          <label>Tema
+            <select name="tema">
+              <option>Cómo prevenir insultos</option>
+              <option>Qué hacer como testigo</option>
+              <option>Cómo reparar un daño verbal</option>
+              <option>Acuerdos para el grupo</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensaje
+          <textarea name="mensaje" rows="5" placeholder="Escribe una reflexión respetuosa..."></textarea>
+        </label>
+        <div class="button-row">
+          <button class="btn btn-primary" type="submit">Publicar comentario</button>
+        </div>
+      </form>
+      <p class="forum-note">Tu comentario aparecerá abajo dentro del mismo foro para mantener la conversación visible.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <span class="pill">Comentarios</span>
+        <h2>Reflexiones publicadas</h2>
+      </div>
+    </div>
+    <div class="comments" data-forum-list>
+      <article class="card comment">
+        <div class="meta">
+          <span class="name">Ejemplo de reflexión</span>
+          <span class="topic">Qué hacer como testigo</span>
+        </div>
+        <p>Si escuchamos una burla constante, no deberíamos reírnos. Podemos decir que no está bien, acompañar a la persona o pedir ayuda.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Escuela Preparatoria Oficial Número 90</strong></p>
+  <p>Foro sobre violencia verbal escolar</p>
+</footer>
+<script src="dinamismo.js"></script>
+</body>
+</html>
+
+
